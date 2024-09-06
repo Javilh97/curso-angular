@@ -1,0 +1,10 @@
+.caja {
+    margin: 0 auto;
+    margin-bottom: 10px;
+    width: 300px;
+    height: 200px;
+    border: 2px solid steelblue;
+    border-radius: 15px;
+    padding: 20px;
+    align-content: center;
+}
