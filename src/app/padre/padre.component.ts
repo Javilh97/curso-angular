@@ -1,5 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-import Swal from 'sweetalert2';
 import { ServicioFamiliarService } from '../servicio-familiar.service';
 import { CurrencyPipe } from '@angular/common';
 //decorador
