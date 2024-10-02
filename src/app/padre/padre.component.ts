@@ -25,12 +25,14 @@ export class PadreComponent implements OnInit{
   }
 
   //Recibir un mensaje desde un componente hijo
-  /* mensajeRecibido!: string;
+  
+  mensajeRecibido!: string;
   
   recibirMensaje($event: string){
     this.mensajeRecibido = $event;
 
-  } */
+  } 
+    
 
   /* mostrar() {
   Swal.fire({
@@ -55,20 +57,23 @@ export class PadreComponent implements OnInit{
   preguntar() {
     console.log(this._servicioFamiliar.preguntarPorHijo());
   }
+
+
+  //valorContador: number = 0;
+   //Esta funcion envia un valor hacia el html mediante la llamada desde html con un evento "click"
+  //  incrementar() {
+  //    this.valorContador++;
+  //  }
+   //Funcion que envia datos al html
+  //  decrementar() {
+  //    this.valorContador--;
+  //  }
+  
+  //  mensajePadre = "mensaje desde el padre :D";
+
 }
 
 
 
-/*   valorContador: number = 0;
-  //Esta funcion envia un valor hacia el html mediante la llamada desde html con un evento "click"
-  incrementar() {
-    this.valorContador++;
-  }
-  //Funcion que envia datos al html
-  decrementar() {
-    this.valorContador--;
-  }
 
-  mensajePadre = "mensaje desde el padre";
 
-}*/

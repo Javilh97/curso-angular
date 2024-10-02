@@ -9,6 +9,8 @@ import { FormsModule } from '@angular/forms';
 import { HermanoComponent } from './hermano/hermano.component';
 import { EstiloHermanosDirective } from './estilo-hermanos.directive';
 import { MiPipePersonalizadoPipe } from './mi-pipe-personalizado.pipe';
+import { CommonModule } from '@angular/common';
+import { PerformanceDashboardComponentComponent } from "./performance-dashboard-component/performance-dashboard-component.component";
 
 @NgModule({
   declarations: [
@@ -22,8 +24,10 @@ import { MiPipePersonalizadoPipe } from './mi-pipe-personalizado.pipe';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FormsModule
-  ],
+    FormsModule,
+    CommonModule,
+    PerformanceDashboardComponentComponent
+],
   providers: [],
   bootstrap: [AppComponent]
 })

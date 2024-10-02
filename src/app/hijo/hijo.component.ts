@@ -9,7 +9,8 @@ import Swal from 'sweetalert2';
 export class HijoComponent {
 
     //Este es la forma de recibir un mensaje desde un componente padre
-    //@Input() recibeHijo: string = "";
+    // @Input() recibeHijo: string = "";
+    //Esta es la forma de enviar un mensaje desde el componente hijo hacia el componente padre    
     @Output() mensajeDesdeHijo = new EventEmitter<string>();
 
     //Enviar un mensaje desde un componente hijo a un componente padre
