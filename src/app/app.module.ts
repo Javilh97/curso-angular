@@ -11,6 +11,7 @@ import { EstiloHermanosDirective } from './estilo-hermanos.directive';
 import { MiPipePersonalizadoPipe } from './mi-pipe-personalizado.pipe';
 import { CommonModule } from '@angular/common';
 import { PerformanceDashboardComponentComponent } from "./performance-dashboard-component/performance-dashboard-component.component";
+import { provideAnimationsAsync } from '@angular/platform-browser/animations/async';
 
 @NgModule({
   declarations: [
@@ -28,7 +29,9 @@ import { PerformanceDashboardComponentComponent } from "./performance-dashboard-
     CommonModule,
     PerformanceDashboardComponentComponent
 ],
-  providers: [],
+  providers: [
+    provideAnimationsAsync()
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
