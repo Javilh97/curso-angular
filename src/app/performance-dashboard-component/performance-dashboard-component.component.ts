@@ -116,10 +116,11 @@ export class PerformanceDashboardComponentComponent{
         maintainAspectRatio: true,
         plugins: { 
           legend: { display: false },
-          tooltip: { enabled: false },
+          tooltip: { enabled: true },
           title: {
             display: true,
-            text: 'Concesiones por región'
+            text: 'Concesiones por región',
+            position: 'bottom'
           },
           datalabels: {
             anchor: 'end',
@@ -137,7 +138,7 @@ export class PerformanceDashboardComponentComponent{
             
           },
           y: { 
-            display: false,
+            display: true,
             beginAtZero: true
           }
         }

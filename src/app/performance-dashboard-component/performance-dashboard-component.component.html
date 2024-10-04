@@ -1,77 +1,31 @@
 <!-- performance-dashboard.component.html -->
 <!-- performance-dashboard.component.html -->
-<div class="dashboard">
   <h1>Dashboard!</h1>
 
-  <h2>Performance overview</h2>
-  <div class="metrics-grid">
-    <!-- <div class="metric-card" *ngFor="let metric of metrics; let i = index">
-      <div class="metric-header">
-        <span>{{metric.title}}</span>
-        <i class="material-icons">{{metric.icon}}</i>
+  <div class="container-fluid">
+    <h3 class="text-center" >TOTAL DE CONCESIONES: {{total}}</h3>
+    <div class="row">
+      <div class="col-2 graficaPastel">
+        <canvas class="" id="concesionesTotal"></canvas>
       </div>
-      <div class="metric-content">
-        <div class="metric-value">{{metric.value}}</div>
-        <div class="metric-change" [ngClass]="metric.color">
-          <i class="material-icons">{{getChangeIcon(metric.change)}}</i>
-          {{metric.change}}%
-        </div>
-        <div class="chart-container">
-          <canvas #chartCanvas></canvas>
-        </div>
+  
+      <div class="col-3 mt-5 pt-5">
+        <!-- <h3>Total concesiones: {{total}}</h3> -->
+        <canvas id="concesionesRegion"></canvas>
       </div>
-    </div> -->
+  
+      <div class="col-4">
+        <!-- <h3>Total concesiones: {{total}}</h3> -->
+        <canvas id="concesionesDistrito"></canvas>
+      </div>
 
-    <div class="metric-card">
-      <h3>Total concesiones: {{total}}</h3>
-      <canvas id="concesionesTotal"></canvas>
     </div>
-
-    <div class="metric-card">
-      <div class="container-fluid">
-        <div class="">
-          <div class="">
-            <div class="">
-              <h3>Total concesiones: {{total}}</h3>
-              <canvas id="concesionesRegion"></canvas>
-            </div>
-      
-          </div>
-        </div>
-      
-      </div>
-    </div>
-    <div class="metric-card">
-      <div class="container-fluid">
-        <div class="row">
-          <div class="">
-            <div class="">
-              <h3>Total concesiones: {{total}}</h3>
-              <canvas id="concesionesDistrito"></canvas>
-            </div>
-      
-          </div>
-        </div>
-      
-      </div>
-    </div>
-
-    
-    
-
 
   </div>
+    
+  
 
 
-  <!-- <h2>Recently viewed dashboards and reports</h2>
-    <div class="recent-dashboards">
-      <div class="dashboard-card" *ngFor="let dashboard of recentDashboards">
-        <div class="dashboard-preview"></div>
-        <div class="dashboard-title">{{dashboard}}</div>
-      </div>
-    </div> -->
-
-</div>
 
 
 

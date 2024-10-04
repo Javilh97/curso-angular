@@ -1,4 +1,11 @@
-/* performance-dashboard.component.css */
+.graficaPastel{
+  width: 14rem;
+  height: 14rem;
+}
+
+
+
+/* performance-dashboard.component.css
 .dashboard {
     padding: 20px;
     font-family: Arial, sans-serif;
@@ -89,4 +96,4 @@
     padding: 10px;
     font-size: 14px;
   }
-
+ */
