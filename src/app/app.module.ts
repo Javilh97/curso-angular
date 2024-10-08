@@ -12,6 +12,7 @@ import { MiPipePersonalizadoPipe } from './mi-pipe-personalizado.pipe';
 import { CommonModule } from '@angular/common';
 import { PerformanceDashboardComponentComponent } from "./performance-dashboard-component/performance-dashboard-component.component";
 import { provideAnimationsAsync } from '@angular/platform-browser/animations/async';
+import { CarouselComponent } from './carousel/carousel.component';
 
 @NgModule({
   declarations: [
@@ -20,14 +21,15 @@ import { provideAnimationsAsync } from '@angular/platform-browser/animations/asy
     HijoComponent,
     HermanoComponent,
     EstiloHermanosDirective,
-    MiPipePersonalizadoPipe
+    MiPipePersonalizadoPipe,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     FormsModule,
     CommonModule,
-    PerformanceDashboardComponentComponent
+    PerformanceDashboardComponentComponent,
+    CarouselComponent
 ],
   providers: [
     provideAnimationsAsync()
