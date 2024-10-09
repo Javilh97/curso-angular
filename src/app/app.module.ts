@@ -13,6 +13,7 @@ import { CommonModule } from '@angular/common';
 import { PerformanceDashboardComponentComponent } from "./performance-dashboard-component/performance-dashboard-component.component";
 import { provideAnimationsAsync } from '@angular/platform-browser/animations/async';
 import { CarouselComponent } from './carousel/carousel.component';
+import { MapaComponent } from './mapa/mapa.component';
 
 @NgModule({
   declarations: [
@@ -29,7 +30,8 @@ import { CarouselComponent } from './carousel/carousel.component';
     FormsModule,
     CommonModule,
     PerformanceDashboardComponentComponent,
-    CarouselComponent
+    CarouselComponent,
+    MapaComponent
 ],
   providers: [
     provideAnimationsAsync()
