@@ -14,6 +14,8 @@ import { PerformanceDashboardComponentComponent } from "./performance-dashboard-
 import { provideAnimationsAsync } from '@angular/platform-browser/animations/async';
 import { CarouselComponent } from './carousel/carousel.component';
 import { MapaComponent } from './mapa/mapa.component';
+import { PokeapiComponent } from './pokeapi/pokeapi.component';
+import { HttpClient, HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -31,7 +33,10 @@ import { MapaComponent } from './mapa/mapa.component';
     CommonModule,
     PerformanceDashboardComponentComponent,
     CarouselComponent,
-    MapaComponent
+    MapaComponent,
+    PokeapiComponent,
+    HttpClientModule
+    
 ],
   providers: [
     provideAnimationsAsync()
