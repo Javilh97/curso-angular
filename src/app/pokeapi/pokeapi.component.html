@@ -1,6 +1,15 @@
 <p>pokeapi works!</p>
 
+<form [formGroup]="formulario" (ngSubmit)="consultaPokemon()">
+    <input id="buscar" type="text" formControlName="buscar">
+    <div *ngIf="formulario.controls['buscar'].invalid && (name.dirty || name.touched)" class="alert alert-danger">
 
+        <div *ngIf="formulario.controls">
+            Name is required.
+        </div>
+    </div>
+    <button type="submit">Buscar</button>
+</form>
 
 <p>Nombre: {{datos}}</p>
 <img [src]="imagen">

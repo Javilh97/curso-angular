@@ -13,8 +13,9 @@ export class ConsumoPokeapiService {
     private http: HttpClient
   ) { }
 
-  obtenerPokemon(): Observable<any> {
-      return this.http.get<any>(`${this.url}/pokemon/pikachu`);
+  obtenerPokemon(event: string): Observable<any> {
+
+      return this.http.get<any>(`${this.url}/pokemon/${event}`);
   }
 
 
